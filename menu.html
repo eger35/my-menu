@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Menu Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My Menu</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('carbs')">Carbs</a></li>
+            <li><a href="#" onclick="showSection('protein')">Protein</a></li>
+            <li><a href="#" onclick="showSection('vegetables')">Vegetables</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="carbs" class="section">
+            <h2>Carbs</h2>
+            <ul id="carbs-list"></ul>
+            <input type="text" id="new-carb" placeholder="Add new carb food">
+            <button onclick="addFood('carbs')">Add</button>
+        </div>
+        <div id="protein" class="section">
+            <h2>Protein</h2>
+            <ul id="protein-list"></ul>
+            <input type="text" id="new-protein" placeholder="Add new protein food">
+            <button onclick="addFood('protein')">Add</button>
+        </div>
+        <div id="vegetables" class="section">
+            <h2>Vegetables</h2>
+            <ul id="vegetables-list"></ul>
+            <input type="text" id="new-vegetable" placeholder="Add new vegetable food">
+            <button onclick="addFood('vegetables')">Add</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
